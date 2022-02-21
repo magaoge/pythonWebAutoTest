@@ -1,0 +1,15 @@
+[32mINFO    [0m pyWebAuntoTest:mylog.py:52 等待加载的元素是:('class name', 'header-btn1')
+[32mINFO    [0m pyWebAuntoTest:mylog.py:52 加载时间为:0:00:00.015477
+[32mINFO    [0m pyWebAuntoTest:mylog.py:52 点击的元素是:('class name', 'header-btn1')
+[32mINFO    [0m pyWebAuntoTest:mylog.py:52 查找的元素是:('class name', 'header-btn1')
+[32mINFO    [0m pyWebAuntoTest:mylog.py:52 输入的元素是:('id', 'username')
+[32mINFO    [0m pyWebAuntoTest:mylog.py:52 查找的元素是:('id', 'username')
+[32mINFO    [0m pyWebAuntoTest:mylog.py:52 输入的元素是:('id', 'password-o')
+[32mINFO    [0m pyWebAuntoTest:mylog.py:52 查找的元素是:('id', 'password-o')
+[32mINFO    [0m pyWebAuntoTest:mylog.py:52 点击的元素是:('class name', 'loginBtn')
+[32mINFO    [0m pyWebAuntoTest:mylog.py:52 查找的元素是:('class name', 'loginBtn')
+[32mINFO    [0m pyWebAuntoTest:mylog.py:52 需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+[32mINFO    [0m pyWebAuntoTest:mylog.py:52 需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+[32mINFO    [0m pyWebAuntoTest:mylog.py:52 等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+[32mINFO    [0m pyWebAuntoTest:mylog.py:52 加载时间为:0:00:00.024990
+[32mINFO    [0m pyWebAuntoTest:mylog.py:52 查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")

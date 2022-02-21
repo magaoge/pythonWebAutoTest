@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError",
+      "children" : [ {
+        "name" : "test_0_login[data2]",
+        "uid" : "cc128e569b6ce2a0",
+        "parentUid" : "a0017ad855102fea08b8682d27fec4ca",
+        "status" : "failed",
+        "time" : {
+          "start" : 1643438259191,
+          "stop" : 1643438260968,
+          "duration" : 1777
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'phoneNum': '16621710375', 'password': 'magaoge..00', 'expect': '========故意做错的断言=========='}" ]
+      } ],
+      "uid" : "a0017ad855102fea08b8682d27fec4ca"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ]
+}

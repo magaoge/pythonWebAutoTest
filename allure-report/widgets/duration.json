@@ -1,0 +1,51 @@
+[ {
+  "uid" : "86f02466867354a1",
+  "name" : "test_1_login_success[data0]",
+  "time" : {
+    "start" : 1643438261742,
+    "stop" : 1643438264822,
+    "duration" : 3080
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "903569dd4a363425",
+  "name" : "test_0_login[data1]",
+  "time" : {
+    "start" : 1643438240720,
+    "stop" : 1643438242362,
+    "duration" : 1642
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "386a3d9673581260",
+  "name" : "test_0_login[data0]",
+  "time" : {
+    "start" : 1643438237987,
+    "stop" : 1643438239911,
+    "duration" : 1924
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1ad2fb55b00ae58b",
+  "name" : "test_pytest",
+  "time" : {
+    "start" : 1643438231043,
+    "stop" : 1643438231045,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "cc128e569b6ce2a0",
+  "name" : "test_0_login[data2]",
+  "time" : {
+    "start" : 1643438259191,
+    "stop" : 1643438260968,
+    "duration" : 1777
+  },
+  "status" : "failed",
+  "severity" : "normal"
+} ]

@@ -1,0 +1,144 @@
+{
+  "uid" : "903569dd4a363425",
+  "name" : "test_0_login[data1]",
+  "fullName" : "TestCase.test_login.TestLogin#test_0_login",
+  "historyId" : "738ece0f8f461474dc677a3d6d8f5524",
+  "time" : {
+    "start" : 1643438240720,
+    "stop" : 1643438242362,
+    "duration" : 1642
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "access_web",
+    "time" : {
+      "start" : 1643438231051,
+      "stop" : 1643438237987,
+      "duration" : 6936
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "refresh",
+    "time" : {
+      "start" : 1643438240719,
+      "stop" : 1643438240719,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "a9536a7d9b8bf6bc",
+      "name" : "log",
+      "source" : "a9536a7d9b8bf6bc.txt",
+      "type" : "text/plain",
+      "size" : 1541
+    }, {
+      "uid" : "b84688bf03c209d",
+      "name" : "stdout",
+      "source" : "b84688bf03c209d.txt",
+      "type" : "text/plain",
+      "size" : 294
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 2,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "access_web::0",
+    "time" : {
+      "start" : 1643438265361,
+      "stop" : 1643438267740,
+      "duration" : 2379
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "refresh::0",
+    "time" : {
+      "start" : 1643438242364,
+      "stop" : 1643438243323,
+      "duration" : 959
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('refresh')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "LNGSHAL-378"
+  }, {
+    "name" : "thread",
+    "value" : "26540-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'phoneNum': '16621710375', 'password': 'magaoge..00', 'expect': '登录失败,请确认账号和密码正确'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.usefixtures('refresh')" ]
+  },
+  "source" : "903569dd4a363425.json",
+  "parameterValues" : [ "{'phoneNum': '16621710375', 'password': 'magaoge..00', 'expect': '登录失败,请确认账号和密码正确'}" ]
+}

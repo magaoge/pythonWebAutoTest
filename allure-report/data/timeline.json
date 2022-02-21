@@ -1,0 +1,104 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "LNGSHAL-378",
+    "children" : [ {
+      "name" : "26540-MainThread",
+      "children" : [ {
+        "name" : "test_1_login_success[data0]",
+        "uid" : "86f02466867354a1",
+        "parentUid" : "6a2493cdeefcc3261446876e22c9769d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643438261742,
+          "stop" : 1643438264822,
+          "duration" : 3080
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'phoneNum': '16621710374', 'password': 'magaoge..00', 'expect': '个人中心'}" ]
+      }, {
+        "name" : "test_0_login[data2]",
+        "uid" : "9885c0f6ae88a749",
+        "parentUid" : "6a2493cdeefcc3261446876e22c9769d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1643438251242,
+          "stop" : 1643438253145,
+          "duration" : 1903
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'phoneNum': '16621710375', 'password': 'magaoge..00', 'expect': '========故意做错的断言=========='}" ]
+      }, {
+        "name" : "test_0_login[data2]",
+        "uid" : "51c90055f0af2892",
+        "parentUid" : "6a2493cdeefcc3261446876e22c9769d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1643438243338,
+          "stop" : 1643438245224,
+          "duration" : 1886
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'phoneNum': '16621710375', 'password': 'magaoge..00', 'expect': '========故意做错的断言=========='}" ]
+      }, {
+        "name" : "test_0_login[data1]",
+        "uid" : "903569dd4a363425",
+        "parentUid" : "6a2493cdeefcc3261446876e22c9769d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643438240720,
+          "stop" : 1643438242362,
+          "duration" : 1642
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'phoneNum': '16621710375', 'password': 'magaoge..00', 'expect': '登录失败,请确认账号和密码正确'}" ]
+      }, {
+        "name" : "test_0_login[data0]",
+        "uid" : "386a3d9673581260",
+        "parentUid" : "6a2493cdeefcc3261446876e22c9769d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643438237987,
+          "stop" : 1643438239911,
+          "duration" : 1924
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'phoneNum': '16621710374', 'password': 'magaoge..', 'expect': '登录失败,请确认账号和密码正确'}" ]
+      }, {
+        "name" : "test_pytest",
+        "uid" : "1ad2fb55b00ae58b",
+        "parentUid" : "6a2493cdeefcc3261446876e22c9769d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1643438231043,
+          "stop" : 1643438231045,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_0_login[data2]",
+        "uid" : "cc128e569b6ce2a0",
+        "parentUid" : "6a2493cdeefcc3261446876e22c9769d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1643438259191,
+          "stop" : 1643438260968,
+          "duration" : 1777
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'phoneNum': '16621710375', 'password': 'magaoge..00', 'expect': '========故意做错的断言=========='}" ]
+      } ],
+      "uid" : "6a2493cdeefcc3261446876e22c9769d"
+    } ],
+    "uid" : "b17c4b9ca41260d8fb6b00d6b77225b8"
+  } ]
+}

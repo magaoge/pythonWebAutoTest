@@ -1,0 +1,74 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "TestCase.test_login",
+    "children" : [ {
+      "name" : "test_pytest",
+      "uid" : "1ad2fb55b00ae58b",
+      "parentUid" : "947fd64009aa32c6799c8651a53e1cd1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643438231043,
+        "stop" : 1643438231045,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_0_login[data0]",
+      "uid" : "386a3d9673581260",
+      "parentUid" : "947fd64009aa32c6799c8651a53e1cd1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643438237987,
+        "stop" : 1643438239911,
+        "duration" : 1924
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'phoneNum': '16621710374', 'password': 'magaoge..', 'expect': '登录失败,请确认账号和密码正确'}" ]
+    }, {
+      "name" : "test_0_login[data1]",
+      "uid" : "903569dd4a363425",
+      "parentUid" : "947fd64009aa32c6799c8651a53e1cd1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643438240720,
+        "stop" : 1643438242362,
+        "duration" : 1642
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'phoneNum': '16621710375', 'password': 'magaoge..00', 'expect': '登录失败,请确认账号和密码正确'}" ]
+    }, {
+      "name" : "test_0_login[data2]",
+      "uid" : "cc128e569b6ce2a0",
+      "parentUid" : "947fd64009aa32c6799c8651a53e1cd1",
+      "status" : "failed",
+      "time" : {
+        "start" : 1643438259191,
+        "stop" : 1643438260968,
+        "duration" : 1777
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'phoneNum': '16621710375', 'password': 'magaoge..00', 'expect': '========故意做错的断言=========='}" ]
+    }, {
+      "name" : "test_1_login_success[data0]",
+      "uid" : "86f02466867354a1",
+      "parentUid" : "947fd64009aa32c6799c8651a53e1cd1",
+      "status" : "passed",
+      "time" : {
+        "start" : 1643438261742,
+        "stop" : 1643438264822,
+        "duration" : 3080
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "{'phoneNum': '16621710374', 'password': 'magaoge..00', 'expect': '个人中心'}" ]
+    } ],
+    "uid" : "TestCase.test_login"
+  } ]
+}

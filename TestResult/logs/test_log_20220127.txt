@@ -1,0 +1,891 @@
+2022-01-27 17:51:09,874-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 17:51:09,892-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.016221
+2022-01-27 17:51:09,892-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 17:51:09,893-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 17:51:10,474-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 17:51:10,475-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 17:51:10,541-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 17:51:10,542-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 17:51:11,111-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 17:51:11,112-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 17:51:11,795-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 17:51:11,797-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 17:51:11,797-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 17:51:11,825-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.024166
+2022-01-27 17:51:11,826-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 17:51:12,609-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 17:51:12,623-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.012253
+2022-01-27 17:51:12,624-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 17:51:12,624-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 17:51:12,893-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 17:51:12,894-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 17:51:12,950-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 17:51:12,951-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 17:51:13,508-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 17:51:13,510-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 17:51:14,175-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 17:51:14,176-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 17:51:14,178-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 17:51:14,199-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.017205
+2022-01-27 17:51:14,201-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 17:51:15,083-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 17:51:15,104-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.019116
+2022-01-27 17:51:15,105-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 17:51:15,107-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 17:51:15,394-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 17:51:15,396-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 17:51:15,461-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 17:51:15,462-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 17:51:16,028-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 17:51:16,030-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 17:51:16,697-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 17:51:16,698-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 17:51:16,700-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 17:51:16,719-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.017524
+2022-01-27 17:51:16,721-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 17:51:16,739-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 17:51:16,740-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127175103.png
+2022-01-27 17:51:16,871-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127175103.png
+2022-01-27 17:51:22,618-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 17:51:22,644-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.023961
+2022-01-27 17:51:22,645-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 17:51:22,645-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 17:51:22,977-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 17:51:22,977-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 17:51:23,035-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 17:51:23,038-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 17:51:23,607-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 17:51:23,610-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 17:51:24,262-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 17:51:24,264-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 17:51:24,266-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 17:51:24,282-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.016475
+2022-01-27 17:51:24,283-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 17:51:24,297-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 17:51:24,298-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127175103.png
+2022-01-27 17:51:24,427-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127175103.png
+2022-01-27 17:51:30,221-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 17:51:30,238-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.014826
+2022-01-27 17:51:30,238-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 17:51:30,239-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 17:51:30,517-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 17:51:30,518-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 17:51:30,565-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 17:51:30,565-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 17:51:31,119-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 17:51:31,120-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 17:51:31,755-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 17:51:31,757-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 17:51:31,759-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 17:51:31,777-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.016121
+2022-01-27 17:51:31,779-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 17:51:31,798-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 17:51:31,799-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127175103.png
+2022-01-27 17:51:31,920-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127175103.png
+2022-01-27 17:51:32,770-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 17:51:32,784-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.011987
+2022-01-27 17:51:32,785-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 17:51:32,786-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 17:51:33,037-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 17:51:33,037-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 17:51:33,084-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 17:51:33,086-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 17:51:33,640-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 17:51:33,642-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 17:51:35,756-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//a[text() = '个人中心']")
+2022-01-27 17:51:35,758-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//a[text() = '个人中心']")
+2022-01-27 17:51:35,758-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//a[text() = '个人中心']")
+2022-01-27 17:51:35,781-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.020182
+2022-01-27 17:51:35,782-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:04:42,679-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:04:42,696-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.013399
+2022-01-27 18:04:42,697-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:04:42,697-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:04:43,314-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:04:43,315-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:04:43,376-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:04:43,377-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:04:43,941-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:04:43,941-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:04:44,659-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:04:44,659-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:04:44,660-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:04:44,683-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.020608
+2022-01-27 18:04:44,684-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:04:45,475-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:04:45,490-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.012872
+2022-01-27 18:04:45,491-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:04:45,492-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:04:45,784-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:04:45,786-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:04:45,842-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:04:45,844-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:04:46,401-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:04:46,403-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:04:47,056-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:04:47,057-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:04:47,058-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:04:47,081-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.020974
+2022-01-27 18:04:47,082-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:04:47,912-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:04:47,924-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.011142
+2022-01-27 18:04:47,925-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:04:47,926-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:04:48,198-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:04:48,199-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:04:48,258-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:04:48,259-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:04:48,831-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:04:48,832-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:04:49,486-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:04:49,487-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:04:49,487-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:04:49,514-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.019664
+2022-01-27 18:04:49,514-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:04:49,527-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:04:49,528-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127180436.png
+2022-01-27 18:04:49,644-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127180436.png
+2022-01-27 18:04:55,507-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:04:55,535-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.026018
+2022-01-27 18:04:55,538-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:04:55,539-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:04:55,860-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:04:55,861-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:04:55,909-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:04:55,910-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:04:56,464-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:04:56,466-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:04:57,119-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:04:57,121-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:04:57,123-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:04:57,152-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.026731
+2022-01-27 18:04:57,154-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:04:57,168-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:04:57,169-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127180436.png
+2022-01-27 18:04:57,296-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127180436.png
+2022-01-27 18:05:02,974-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:05:03,004-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.020626
+2022-01-27 18:05:03,005-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:05:03,006-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:05:03,344-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:05:03,345-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:05:03,391-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:05:03,392-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:05:03,948-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:05:03,949-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:05:04,602-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:05:04,604-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:05:04,606-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:05:04,636-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.028263
+2022-01-27 18:05:04,637-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:05:04,650-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:05:04,651-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127180436.png
+2022-01-27 18:05:04,781-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127180436.png
+2022-01-27 18:05:06,468-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:05:06,479-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.010795
+2022-01-27 18:05:06,480-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:05:06,481-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:05:06,719-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:05:06,720-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:05:06,773-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:05:06,774-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:05:07,325-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:05:07,326-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:05:09,445-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:05:09,446-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:05:09,449-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:05:09,471-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.021613
+2022-01-27 18:05:09,472-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:17:58,074-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:17:58,092-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.016417
+2022-01-27 18:17:58,093-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:17:58,094-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:17:58,591-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:17:58,592-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:17:58,648-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:17:58,649-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:17:59,206-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:17:59,208-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:17:59,920-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:17:59,922-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:17:59,923-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:17:59,942-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.016003
+2022-01-27 18:17:59,943-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:18:00,691-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:18:00,704-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.010822
+2022-01-27 18:18:00,705-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:18:00,706-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:18:01,007-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:18:01,009-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:18:01,068-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:18:01,069-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:18:01,625-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:18:01,626-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:18:02,306-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:18:02,310-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:18:02,311-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:18:02,332-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.019604
+2022-01-27 18:18:02,333-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:18:02,985-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:18:02,998-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.010490
+2022-01-27 18:18:02,998-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:18:02,999-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:18:03,308-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:18:03,308-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:18:03,360-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:18:03,361-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:18:03,924-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:18:03,924-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:18:04,575-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:18:04,579-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:18:04,580-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:18:04,604-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.022198
+2022-01-27 18:18:04,606-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:18:04,625-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:18:04,626-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127181752.png
+2022-01-27 18:18:04,762-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127181752.png
+2022-01-27 18:18:10,570-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:18:10,584-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.013152
+2022-01-27 18:18:10,585-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:18:10,585-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:18:10,875-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:18:10,876-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:18:10,922-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:18:10,924-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:18:11,483-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:18:11,485-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:18:12,147-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:18:12,149-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:18:12,151-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:18:12,170-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.018255
+2022-01-27 18:18:12,171-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:18:12,187-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:18:12,189-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127181752.png
+2022-01-27 18:18:12,305-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127181752.png
+2022-01-27 18:18:18,030-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:18:18,051-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.017211
+2022-01-27 18:18:18,052-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:18:18,053-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:18:18,357-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:18:18,358-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:18:18,407-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:18:18,408-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:18:18,959-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:18:18,961-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:18:19,619-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:18:19,621-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:18:19,623-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:18:19,649-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.023728
+2022-01-27 18:18:19,652-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:18:19,675-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:18:19,677-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127181752.png
+2022-01-27 18:18:19,814-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127181752.png
+2022-01-27 18:18:20,467-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:18:20,482-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.012715
+2022-01-27 18:18:20,483-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:18:20,483-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:18:20,761-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:18:20,762-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:18:20,808-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:18:20,810-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:18:21,359-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:18:21,361-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:18:23,460-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:18:23,461-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:18:23,462-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:18:23,484-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.019642
+2022-01-27 18:18:23,485-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:21:05,220-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:21:05,240-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.017738
+2022-01-27 18:21:05,241-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:21:05,242-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:21:05,776-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:21:05,777-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:21:05,828-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:21:05,828-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:21:06,384-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:21:06,385-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:21:07,086-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:21:07,087-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:21:07,088-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:21:07,107-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.016559
+2022-01-27 18:21:07,107-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:21:07,810-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:21:07,834-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.022616
+2022-01-27 18:21:07,836-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:21:07,837-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:21:08,121-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:21:08,124-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:21:08,174-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:21:08,175-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:21:08,733-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:21:08,735-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:21:09,417-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:21:09,419-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:21:09,421-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:21:09,440-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.017050
+2022-01-27 18:21:09,442-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:21:10,210-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:21:10,222-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.010981
+2022-01-27 18:21:10,222-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:21:10,224-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:21:10,474-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:21:10,476-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:21:10,529-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:21:10,529-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:21:11,080-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:21:11,081-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:21:11,750-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:21:11,752-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:21:11,753-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:21:11,775-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.020023
+2022-01-27 18:21:11,778-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:21:11,798-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:21:11,800-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127182059.png
+2022-01-27 18:21:11,926-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127182059.png
+2022-01-27 18:21:17,751-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:21:17,769-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.016216
+2022-01-27 18:21:17,769-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:21:17,770-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:21:18,093-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:21:18,094-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:21:18,144-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:21:18,145-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:21:18,695-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:21:18,696-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:21:19,351-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:21:19,353-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:21:19,356-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:21:19,380-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.022141
+2022-01-27 18:21:19,381-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:21:19,399-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:21:19,400-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127182059.png
+2022-01-27 18:21:19,520-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127182059.png
+2022-01-27 18:21:25,204-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:21:25,226-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.019631
+2022-01-27 18:21:25,226-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:21:25,227-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:21:25,530-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:21:25,532-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:21:25,585-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:21:25,586-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:21:26,145-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:21:26,147-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:21:26,800-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:21:26,801-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:21:26,803-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:21:26,824-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.019422
+2022-01-27 18:21:26,826-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:21:26,845-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:21:26,846-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127182059.png
+2022-01-27 18:21:26,970-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127182059.png
+2022-01-27 18:21:27,598-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:21:27,610-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.011702
+2022-01-27 18:21:27,611-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:21:27,612-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:21:27,859-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:21:27,860-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:21:27,911-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:21:27,912-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:21:28,457-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:21:28,458-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:21:30,581-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:21:30,583-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:21:30,585-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:21:30,613-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.024590
+2022-01-27 18:21:30,614-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:26:19,514-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:26:19,534-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.017920
+2022-01-27 18:26:19,535-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:26:19,536-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:26:19,952-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:26:19,953-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:26:20,009-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:26:20,010-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:26:20,576-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:26:20,578-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:26:21,263-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:26:21,264-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:26:21,265-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:26:21,288-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.019586
+2022-01-27 18:26:21,290-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:26:22,156-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:26:22,175-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.018452
+2022-01-27 18:26:22,177-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:26:22,178-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:26:22,453-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:26:22,454-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:26:22,512-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:26:22,513-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:26:23,068-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:26:23,069-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:26:23,737-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:26:23,739-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:26:23,742-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:26:23,763-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.020029
+2022-01-27 18:26:23,764-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:26:24,584-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:26:24,601-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.015211
+2022-01-27 18:26:24,603-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:26:24,603-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:26:24,842-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:26:24,843-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:26:24,907-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:26:24,907-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:26:25,486-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:26:25,488-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:26:26,152-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:26:26,154-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:26:26,155-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:26:26,180-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.022552
+2022-01-27 18:26:26,182-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:26:26,200-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:26:26,201-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127182613.png
+2022-01-27 18:26:26,332-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127182613.png
+2022-01-27 18:26:32,227-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:26:32,248-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.019037
+2022-01-27 18:26:32,248-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:26:32,250-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:26:32,567-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:26:32,568-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:26:32,624-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:26:32,625-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:26:33,185-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:26:33,188-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:26:33,838-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:26:33,839-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:26:33,841-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:26:33,868-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.024666
+2022-01-27 18:26:33,868-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:26:33,889-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:26:33,890-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127182613.png
+2022-01-27 18:26:34,006-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127182613.png
+2022-01-27 18:26:39,660-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:26:39,680-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.017934
+2022-01-27 18:26:39,682-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:26:39,682-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:26:39,974-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:26:39,975-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:26:40,035-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:26:40,036-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:26:40,593-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:26:40,595-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:26:41,258-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:26:41,261-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:26:41,263-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:26:41,288-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.023195
+2022-01-27 18:26:41,289-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:26:41,310-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:26:41,311-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127182613.png
+2022-01-27 18:26:41,443-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127182613.png
+2022-01-27 18:26:42,147-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:26:42,160-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.011462
+2022-01-27 18:26:42,161-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:26:42,161-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:26:42,410-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:26:42,411-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:26:42,469-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:26:42,471-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:26:43,032-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:26:43,034-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:26:45,092-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:26:45,093-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:26:45,094-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:26:45,116-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.021246
+2022-01-27 18:26:45,117-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:29:17,361-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:29:17,378-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.016422
+2022-01-27 18:29:17,379-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:29:17,380-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:29:17,828-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:29:17,830-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:29:17,900-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:29:17,901-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:29:18,461-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:29:18,463-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:29:19,161-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:29:19,163-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:29:19,163-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:29:19,181-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.017319
+2022-01-27 18:29:19,182-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:29:19,895-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:29:19,910-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.014512
+2022-01-27 18:29:19,912-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:29:19,913-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:29:20,209-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:29:20,209-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:29:20,266-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:29:20,267-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:29:20,862-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:29:20,864-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:29:21,571-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:29:21,574-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:29:21,575-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:29:21,594-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.016815
+2022-01-27 18:29:21,594-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:29:22,339-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:29:22,352-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.011304
+2022-01-27 18:29:22,353-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:29:22,353-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:29:22,593-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:29:22,594-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:29:22,642-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:29:22,643-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:29:23,190-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:29:23,192-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:29:23,860-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:29:23,862-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:29:23,864-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:29:23,882-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.017151
+2022-01-27 18:29:23,883-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:29:23,900-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:29:23,900-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127182911.png
+2022-01-27 18:29:24,029-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127182911.png
+2022-01-27 18:29:29,842-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:29:29,857-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.013403
+2022-01-27 18:29:29,858-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:29:29,859-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:29:30,171-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:29:30,173-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:29:30,229-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:29:30,230-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:29:30,786-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:29:30,787-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:29:31,424-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:29:31,425-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:29:31,426-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:29:31,440-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.012472
+2022-01-27 18:29:31,441-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:29:31,456-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:29:31,458-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127182911.png
+2022-01-27 18:29:31,581-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127182911.png
+2022-01-27 18:29:37,463-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:29:37,487-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.023368
+2022-01-27 18:29:37,488-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:29:37,489-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:29:37,789-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:29:37,791-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:29:37,840-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:29:37,841-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:29:38,404-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:29:38,406-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:29:39,077-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:29:39,079-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:29:39,081-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:29:39,103-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.021841
+2022-01-27 18:29:39,104-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:29:39,120-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:29:39,122-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127182911.png
+2022-01-27 18:29:39,248-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127182911.png
+2022-01-27 18:29:39,969-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:29:39,983-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.012986
+2022-01-27 18:29:39,985-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:29:39,986-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:29:40,265-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:29:40,266-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:29:40,321-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:29:40,321-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:29:40,878-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:29:40,880-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:29:43,002-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:29:43,003-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:29:43,004-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:29:43,031-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.025772
+2022-01-27 18:29:43,032-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:31:39,478-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:31:39,501-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.021537
+2022-01-27 18:31:39,502-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:31:39,503-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:31:39,982-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:31:39,983-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:31:40,038-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:31:40,039-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:31:40,596-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:31:40,598-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:31:41,311-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:31:41,313-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:31:41,315-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:31:41,336-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.018703
+2022-01-27 18:31:41,337-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:31:42,064-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:31:42,079-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.014731
+2022-01-27 18:31:42,080-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:31:42,081-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:31:42,383-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:31:42,385-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:31:42,434-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:31:42,435-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:31:43,000-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:31:43,001-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:31:43,654-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:31:43,656-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:31:43,657-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:31:43,677-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.018388
+2022-01-27 18:31:43,678-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:31:44,434-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:31:44,446-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.011372
+2022-01-27 18:31:44,447-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:31:44,448-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:31:44,702-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:31:44,704-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:31:44,764-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:31:44,765-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:31:45,332-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:31:45,333-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:31:46,016-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:31:46,018-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:31:46,018-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:31:46,037-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.017378
+2022-01-27 18:31:46,037-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:31:46,055-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:31:46,056-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127183133.png
+2022-01-27 18:31:46,219-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127183133.png
+2022-01-27 18:31:52,042-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:31:52,060-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.016864
+2022-01-27 18:31:52,061-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:31:52,063-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:31:52,371-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:31:52,371-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:31:52,422-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:31:52,422-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:31:52,970-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:31:52,972-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:31:53,625-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:31:53,627-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:31:53,630-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:31:53,656-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.022850
+2022-01-27 18:31:53,656-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:31:53,677-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:31:53,679-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127183133.png
+2022-01-27 18:31:53,799-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127183133.png
+2022-01-27 18:31:59,530-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:31:59,551-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.019793
+2022-01-27 18:31:59,554-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:31:59,556-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:31:59,869-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:31:59,871-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:31:59,919-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:31:59,921-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:32:00,476-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:32:00,478-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:32:01,149-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:32:01,150-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:32:01,150-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:32:01,169-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.016996
+2022-01-27 18:32:01,169-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:32:01,181-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:32:01,182-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127183133.png
+2022-01-27 18:32:01,303-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127183133.png
+2022-01-27 18:32:02,117-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:32:02,134-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.015757
+2022-01-27 18:32:02,135-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:32:02,136-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:32:02,433-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:32:02,434-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:32:02,481-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:32:02,483-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:32:03,033-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:32:03,036-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:32:05,072-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:32:05,073-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:32:05,075-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:32:05,097-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.022092
+2022-01-27 18:32:05,100-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:41:27,955-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:41:27,972-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.014055
+2022-01-27 18:41:27,972-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:41:27,973-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:41:28,406-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:41:28,406-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:41:28,466-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:41:28,467-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:41:29,017-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:41:29,019-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:41:29,702-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:41:29,704-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:41:29,704-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:41:29,724-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.016888
+2022-01-27 18:41:29,725-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:41:30,424-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:41:30,435-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.010940
+2022-01-27 18:41:30,436-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:41:30,437-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:41:30,735-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:41:30,736-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:41:30,788-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:41:30,789-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:41:31,344-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:41:31,345-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:41:31,999-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:41:32,000-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:41:32,001-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:41:32,024-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.021485
+2022-01-27 18:41:32,026-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:41:36,794-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:41:36,804-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.010019
+2022-01-27 18:41:36,805-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:41:36,806-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:41:37,077-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:41:37,080-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:41:37,129-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:41:37,130-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:41:37,681-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:41:37,683-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:41:38,337-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:41:38,339-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:41:38,341-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:41:38,365-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.022229
+2022-01-27 18:41:38,368-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:41:38,386-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:41:38,387-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127184122.png
+2022-01-27 18:41:38,510-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127184122.png
+2022-01-27 18:41:44,328-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:41:44,347-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.016456
+2022-01-27 18:41:44,348-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:41:44,348-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:41:44,666-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:41:44,667-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:41:44,722-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:41:44,723-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:41:45,273-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:41:45,274-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:41:45,943-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:41:45,943-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:41:45,945-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:41:45,963-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.018292
+2022-01-27 18:41:45,964-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:41:45,981-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:41:45,983-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127184122.png
+2022-01-27 18:41:46,158-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127184122.png
+2022-01-27 18:41:51,979-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:41:51,995-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.014930
+2022-01-27 18:41:51,996-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:41:51,997-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:41:52,307-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:41:52,309-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:41:52,362-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:41:52,363-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:41:52,910-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:41:52,912-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:41:53,580-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:41:53,584-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:41:53,586-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:41:53,612-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.023592
+2022-01-27 18:41:53,613-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:41:53,630-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:41:53,631-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127184122.png
+2022-01-27 18:41:53,758-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127184122.png
+2022-01-27 18:41:54,467-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:41:54,483-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.014339
+2022-01-27 18:41:54,484-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:41:54,484-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:41:54,768-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:41:54,769-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:41:54,814-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:41:54,815-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:41:55,368-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:41:55,368-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:41:57,481-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:41:57,482-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:41:57,482-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:41:57,508-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.023574
+2022-01-27 18:41:57,508-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:42:59,935-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:42:59,954-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.017489
+2022-01-27 18:42:59,954-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:42:59,955-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:43:00,466-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:43:00,467-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:43:00,511-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:43:00,512-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:43:01,063-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:43:01,064-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:43:01,761-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:43:01,763-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:43:01,766-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:43:01,788-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.021063
+2022-01-27 18:43:01,789-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:43:06,501-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:43:06,522-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.018527
+2022-01-27 18:43:06,523-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:43:06,524-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:43:06,815-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:43:06,816-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:43:06,860-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:43:06,861-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:43:07,406-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:43:07,407-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:43:08,061-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:43:08,061-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:43:08,062-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:43:08,076-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.012112
+2022-01-27 18:43:08,077-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:43:08,845-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:43:08,859-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.012604
+2022-01-27 18:43:08,859-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:43:08,860-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:43:09,098-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:43:09,099-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:43:09,138-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:43:09,141-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:43:09,679-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:43:09,679-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:43:10,347-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:43:10,349-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:43:10,351-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:43:10,371-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.019498
+2022-01-27 18:43:10,372-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:43:10,387-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:43:10,388-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127184254.png
+2022-01-27 18:43:10,512-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127184254.png
+2022-01-27 18:43:20,290-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:43:20,315-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.023818
+2022-01-27 18:43:20,316-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:43:20,316-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:43:20,643-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:43:20,645-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:43:20,697-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:43:20,698-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:43:21,253-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:43:21,254-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:43:21,908-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:43:21,909-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:43:21,909-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:43:21,926-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.016057
+2022-01-27 18:43:21,926-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:43:21,939-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:43:21,940-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127184254.png
+2022-01-27 18:43:22,059-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127184254.png
+2022-01-27 18:43:27,766-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:43:27,784-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.015977
+2022-01-27 18:43:27,785-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:43:27,785-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:43:28,087-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:43:28,088-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:43:28,131-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:43:28,131-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:43:28,682-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:43:28,682-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:43:29,351-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:43:29,352-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:43:29,353-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:43:29,369-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.016118
+2022-01-27 18:43:29,370-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//em[text()='登录失败,请确认账号和密码正确']")
+2022-01-27 18:43:29,383-ERROR-mylog.py-pyWebAuntoTest-日志信息：首页_登录_登录失败断言文本断言失败！
+2022-01-27 18:43:29,384-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127184254.png
+2022-01-27 18:43:29,504-INFO-mylog.py-pyWebAuntoTest-日志信息：图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220127184254.png
+2022-01-27 18:43:30,309-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('class name', 'header-btn1')
+2022-01-27 18:43:30,323-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.014288
+2022-01-27 18:43:30,324-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'header-btn1')
+2022-01-27 18:43:30,324-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'header-btn1')
+2022-01-27 18:43:30,604-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'username')
+2022-01-27 18:43:30,605-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'username')
+2022-01-27 18:43:30,653-INFO-mylog.py-pyWebAuntoTest-日志信息：输入的元素是:('id', 'password-o')
+2022-01-27 18:43:30,655-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('id', 'password-o')
+2022-01-27 18:43:31,200-INFO-mylog.py-pyWebAuntoTest-日志信息：点击的元素是:('class name', 'loginBtn')
+2022-01-27 18:43:31,202-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('class name', 'loginBtn')
+2022-01-27 18:43:33,254-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:43:33,255-INFO-mylog.py-pyWebAuntoTest-日志信息：需要获取文本断言的元素是('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:43:33,255-INFO-mylog.py-pyWebAuntoTest-日志信息：等待加载的元素是:('xpath', "//a[text() = '个人中心']")
+2022-01-27 18:43:33,280-INFO-mylog.py-pyWebAuntoTest-日志信息：加载时间为:0:00:00.022711
+2022-01-27 18:43:33,280-INFO-mylog.py-pyWebAuntoTest-日志信息：查找的元素是:('xpath', "//a[text() = '个人中心']")

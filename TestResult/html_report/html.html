@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Test Report</title>
+    <link href="assets/style.css" rel="stylesheet" type="text/css"/></head>
+  <body onLoad="init()">
+    <script>/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+
+function toArray(iter) {
+    if (iter === null) {
+        return null;
+    }
+    return Array.prototype.slice.call(iter);
+}
+
+function find(selector, elem) { // eslint-disable-line no-redeclare
+    if (!elem) {
+        elem = document;
+    }
+    return elem.querySelector(selector);
+}
+
+function findAll(selector, elem) {
+    if (!elem) {
+        elem = document;
+    }
+    return toArray(elem.querySelectorAll(selector));
+}
+
+function sortColumn(elem) {
+    toggleSortStates(elem);
+    const colIndex = toArray(elem.parentNode.childNodes).indexOf(elem);
+    let key;
+    if (elem.classList.contains('result')) {
+        key = keyResult;
+    } else if (elem.classList.contains('links')) {
+        key = keyLink;
+    } else {
+        key = keyAlpha;
+    }
+    sortTable(elem, key(colIndex));
+}
+
+function showAllExtras() { // eslint-disable-line no-unused-vars
+    findAll('.col-result').forEach(showExtras);
+}
+
+function hideAllExtras() { // eslint-disable-line no-unused-vars
+    findAll('.col-result').forEach(hideExtras);
+}
+
+function showExtras(colresultElem) {
+    const extras = colresultElem.parentNode.nextElementSibling;
+    const expandcollapse = colresultElem.firstElementChild;
+    extras.classList.remove('collapsed');
+    expandcollapse.classList.remove('expander');
+    expandcollapse.classList.add('collapser');
+}
+
+function hideExtras(colresultElem) {
+    const extras = colresultElem.parentNode.nextElementSibling;
+    const expandcollapse = colresultElem.firstElementChild;
+    extras.classList.add('collapsed');
+    expandcollapse.classList.remove('collapser');
+    expandcollapse.classList.add('expander');
+}
+
+function showFilters() {
+    const filterItems = document.getElementsByClassName('filter');
+    for (let i = 0; i < filterItems.length; i++)
+        filterItems[i].hidden = false;
+}
+
+function addCollapse() {
+    // Add links for show/hide all
+    const resulttable = find('table#results-table');
+    const showhideall = document.createElement('p');
+    showhideall.innerHTML = '<a href="javascript:showAllExtras()">Show all details</a> / ' +
+                            '<a href="javascript:hideAllExtras()">Hide all details</a>';
+    resulttable.parentElement.insertBefore(showhideall, resulttable);
+
+    // Add show/hide link to each result
+    findAll('.col-result').forEach(function(elem) {
+        const collapsed = getQueryParameter('collapsed') || 'Passed';
+        const extras = elem.parentNode.nextElementSibling;
+        const expandcollapse = document.createElement('span');
+        if (extras.classList.contains('collapsed')) {
+            expandcollapse.classList.add('expander');
+        } else if (collapsed.includes(elem.innerHTML)) {
+            extras.classList.add('collapsed');
+            expandcollapse.classList.add('expander');
+        } else {
+            expandcollapse.classList.add('collapser');
+        }
+        elem.appendChild(expandcollapse);
+
+        elem.addEventListener('click', function(event) {
+            if (event.currentTarget.parentNode.nextElementSibling.classList.contains('collapsed')) {
+                showExtras(event.currentTarget);
+            } else {
+                hideExtras(event.currentTarget);
+            }
+        });
+    });
+}
+
+function getQueryParameter(name) {
+    const match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+function init () { // eslint-disable-line no-unused-vars
+    resetSortHeaders();
+
+    addCollapse();
+
+    showFilters();
+
+    sortColumn(find('.initial-sort'));
+
+    findAll('.sortable').forEach(function(elem) {
+        elem.addEventListener('click',
+            function() {
+                sortColumn(elem);
+            }, false);
+    });
+}
+
+function sortTable(clicked, keyFunc) {
+    const rows = findAll('.results-table-row');
+    const reversed = !clicked.classList.contains('asc');
+    const sortedRows = sort(rows, keyFunc, reversed);
+    /* Whole table is removed here because browsers acts much slower
+     * when appending existing elements.
+     */
+    const thead = document.getElementById('results-table-head');
+    document.getElementById('results-table').remove();
+    const parent = document.createElement('table');
+    parent.id = 'results-table';
+    parent.appendChild(thead);
+    sortedRows.forEach(function(elem) {
+        parent.appendChild(elem);
+    });
+    document.getElementsByTagName('BODY')[0].appendChild(parent);
+}
+
+function sort(items, keyFunc, reversed) {
+    const sortArray = items.map(function(item, i) {
+        return [keyFunc(item), i];
+    });
+
+    sortArray.sort(function(a, b) {
+        const keyA = a[0];
+        const keyB = b[0];
+
+        if (keyA == keyB) return 0;
+
+        if (reversed) {
+            return keyA < keyB ? 1 : -1;
+        } else {
+            return keyA > keyB ? 1 : -1;
+        }
+    });
+
+    return sortArray.map(function(item) {
+        const index = item[1];
+        return items[index];
+    });
+}
+
+function keyAlpha(colIndex) {
+    return function(elem) {
+        return elem.childNodes[1].childNodes[colIndex].firstChild.data.toLowerCase();
+    };
+}
+
+function keyLink(colIndex) {
+    return function(elem) {
+        const dataCell = elem.childNodes[1].childNodes[colIndex].firstChild;
+        return dataCell == null ? '' : dataCell.innerText.toLowerCase();
+    };
+}
+
+function keyResult(colIndex) {
+    return function(elem) {
+        const strings = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed',
+            'Skipped', 'Passed'];
+        return strings.indexOf(elem.childNodes[1].childNodes[colIndex].firstChild.data);
+    };
+}
+
+function resetSortHeaders() {
+    findAll('.sort-icon').forEach(function(elem) {
+        elem.parentNode.removeChild(elem);
+    });
+    findAll('.sortable').forEach(function(elem) {
+        const icon = document.createElement('div');
+        icon.className = 'sort-icon';
+        icon.textContent = 'vvv';
+        elem.insertBefore(icon, elem.firstChild);
+        elem.classList.remove('desc', 'active');
+        elem.classList.add('asc', 'inactive');
+    });
+}
+
+function toggleSortStates(elem) {
+    //if active, toggle between asc and desc
+    if (elem.classList.contains('active')) {
+        elem.classList.toggle('asc');
+        elem.classList.toggle('desc');
+    }
+
+    //if inactive, reset all other functions and add ascending active
+    if (elem.classList.contains('inactive')) {
+        resetSortHeaders();
+        elem.classList.remove('inactive');
+        elem.classList.add('active');
+    }
+}
+
+function isAllRowsHidden(value) {
+    return value.hidden == false;
+}
+
+function filterTable(elem) { // eslint-disable-line no-unused-vars
+    const outcomeAtt = 'data-test-result';
+    const outcome = elem.getAttribute(outcomeAtt);
+    const classOutcome = outcome + ' results-table-row';
+    const outcomeRows = document.getElementsByClassName(classOutcome);
+
+    for(let i = 0; i < outcomeRows.length; i++){
+        outcomeRows[i].hidden = !elem.checked;
+    }
+
+    const rows = findAll('.results-table-row').filter(isAllRowsHidden);
+    const allRowsHidden = rows.length == 0 ? true : false;
+    const notFoundMessage = document.getElementById('not-found-message');
+    notFoundMessage.hidden = !allRowsHidden;
+}
+</script>
+    <h1>html.html</h1>
+    <p>Report generated on 29-Jan-2022 at 15:18:22 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <h2>Environment</h2>
+    <table id="environment">
+      <tr>
+        <td>JAVA_HOME</td>
+        <td>C:\Program Files\Java\jdk1.8.0_181</td></tr>
+      <tr>
+        <td>Packages</td>
+        <td>{"pluggy": "1.0.0", "py": "1.11.0", "pytest": "6.2.5"}</td></tr>
+      <tr>
+        <td>Platform</td>
+        <td>Windows-10-10.0.19041-SP0</td></tr>
+      <tr>
+        <td>Plugins</td>
+        <td>{"allure-pytest": "2.9.45", "html": "3.1.1", "metadata": "1.11.0", "rerunfailures": "10.2"}</td></tr>
+      <tr>
+        <td>Python</td>
+        <td>3.8.5</td></tr></table>
+    <h2>Summary</h2>
+    <p>5 tests ran in 34.21 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">4 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="rerun">2 rerun</span>
+    <h2>Results</h2>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable result initial-sort" col="result">Result</th>
+          <th class="sortable" col="name">Test</th>
+          <th class="sortable" col="duration">Duration</th>
+          <th class="sortable links" col="links">Links</th></tr>
+        <tr hidden="true" id="not-found-message">
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">TestCase/test_login.py::TestLogin::test_0_login[data2]</td>
+          <td class="col-duration">2.56</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;TestCase.test_login.TestLogin object at 0x000002531B187820&gt;, data = {&#x27;expect&#x27;: &#x27;========故意做错的断言==========&#x27;, &#x27;password&#x27;: &#x27;magaoge..00&#x27;, &#x27;phoneNum&#x27;: &#x27;16621710375&#x27;}<br/>access_web = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;936b1fb658681536731a912c9cff663e&quot;)&gt;<br/><br/>    @pytest.mark.parametrize(&quot;data&quot;,login_erro_data)<br/>    def test_0_login(self, data,access_web):<br/>        print(data)<br/>        LoginPage(access_web).login(data[&quot;phoneNum&quot;], data[&quot;password&quot;])<br/>        # 断言判断，三种方式，根据实际的场景来使用：<br/>        # 1.find_element<br/>        # 2.显式等待加载页面元素，加载不到判断错误<br/>        # 3.assert<br/>        time.sleep(0.5)<br/>        # assert True<br/>&gt;       LoginPage(access_web).assert_by_txt(access_web,data[&quot;expect&quot;],loc.login_fieldText_Xpath,doc=&quot;首页_登录_登录失败断言&quot;)<br/><br/>TestCase\test_login.py:68: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;PageObject.login_page.LoginPage object at 0x000002531B187430&gt;, access_web = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;936b1fb658681536731a912c9cff663e&quot;)&gt;<br/>excepct = &#x27;========故意做错的断言==========&#x27;, locator = (&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;), doc = &#x27;首页_登录_登录失败断言&#x27;<br/><br/>    def assert_by_txt(self,access_web,excepct,locator,doc=&quot;&quot;):<br/>        &quot;&quot;&quot;<br/>        :param excepct:预期的结果值<br/>        :param locater: 希望对比的实际数据的元素定位坐标<br/>        :param doc:<br/>        :return:<br/>        &quot;&quot;&quot;<br/>        MyLog.info(&quot;需要获取文本断言的元素是{}&quot;.format(locator))<br/>        txt = self.get_element_text(locator,doc=doc)<br/>        try:<br/>&gt;           assert excepct == txt<br/><span class="error">E           AssertionError</span><br/><br/>PageObject\base_page.py:270: AssertionError<br/> -----------------------------Captured stdout setup------------------------------ <br/>========方法公用=========
+<br/> ------------------------------Captured stdout call------------------------------ <br/>{&#x27;phoneNum&#x27;: &#x27;16621710375&#x27;, &#x27;password&#x27;: &#x27;magaoge..00&#x27;, &#x27;expect&#x27;: &#x27;========故意做错的断言==========&#x27;}
+等待加载的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+等待加载的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     pyWebAuntoTest:mylog.py:52 等待加载的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 加载时间为:0:00:00.014943
+INFO     pyWebAuntoTest:mylog.py:52 点击的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 输入的元素是:(&#x27;id&#x27;, &#x27;username&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;id&#x27;, &#x27;username&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 输入的元素是:(&#x27;id&#x27;, &#x27;password-o&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;id&#x27;, &#x27;password-o&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 点击的元素是:(&#x27;class name&#x27;, &#x27;loginBtn&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;class name&#x27;, &#x27;loginBtn&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 需要获取文本断言的元素是(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 需要获取文本断言的元素是(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 等待加载的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 加载时间为:0:00:00.014797
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+ERROR    pyWebAuntoTest:mylog.py:56 首页_登录_登录失败断言文本断言失败！
+INFO     pyWebAuntoTest:mylog.py:52 图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220129151747.png
+INFO     pyWebAuntoTest:mylog.py:52 图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220129151747.png<br/> -----------------------------Captured stdout setup------------------------------ <br/>========方法公用=========
+<br/> ------------------------------Captured stdout call------------------------------ <br/>{&#x27;phoneNum&#x27;: &#x27;16621710375&#x27;, &#x27;password&#x27;: &#x27;magaoge..00&#x27;, &#x27;expect&#x27;: &#x27;========故意做错的断言==========&#x27;}
+等待加载的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+等待加载的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     pyWebAuntoTest:mylog.py:52 等待加载的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 加载时间为:0:00:00.029150
+INFO     pyWebAuntoTest:mylog.py:52 点击的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 输入的元素是:(&#x27;id&#x27;, &#x27;username&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;id&#x27;, &#x27;username&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 输入的元素是:(&#x27;id&#x27;, &#x27;password-o&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;id&#x27;, &#x27;password-o&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 点击的元素是:(&#x27;class name&#x27;, &#x27;loginBtn&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;class name&#x27;, &#x27;loginBtn&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 需要获取文本断言的元素是(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 需要获取文本断言的元素是(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 等待加载的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 加载时间为:0:00:00.028795
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+ERROR    pyWebAuntoTest:mylog.py:56 首页_登录_登录失败断言文本断言失败！
+INFO     pyWebAuntoTest:mylog.py:52 图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220129151747.png
+INFO     pyWebAuntoTest:mylog.py:52 图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220129151747.png<br/> -----------------------------Captured stdout setup------------------------------ <br/>========方法公用=========
+<br/> ------------------------------Captured stdout call------------------------------ <br/>{&#x27;phoneNum&#x27;: &#x27;16621710375&#x27;, &#x27;password&#x27;: &#x27;magaoge..00&#x27;, &#x27;expect&#x27;: &#x27;========故意做错的断言==========&#x27;}
+等待加载的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+等待加载的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     pyWebAuntoTest:mylog.py:52 等待加载的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 加载时间为:0:00:00.017691
+INFO     pyWebAuntoTest:mylog.py:52 点击的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 输入的元素是:(&#x27;id&#x27;, &#x27;username&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;id&#x27;, &#x27;username&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 输入的元素是:(&#x27;id&#x27;, &#x27;password-o&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;id&#x27;, &#x27;password-o&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 点击的元素是:(&#x27;class name&#x27;, &#x27;loginBtn&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;class name&#x27;, &#x27;loginBtn&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 需要获取文本断言的元素是(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 需要获取文本断言的元素是(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 等待加载的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 加载时间为:0:00:00.019393
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+ERROR    pyWebAuntoTest:mylog.py:56 首页_登录_登录失败断言文本断言失败！
+INFO     pyWebAuntoTest:mylog.py:52 图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220129151747.png
+INFO     pyWebAuntoTest:mylog.py:52 图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220129151747.png<br/></div></td></tr></tbody>
+      <tbody class="rerun results-table-row">
+        <tr>
+          <td class="col-result">Rerun</td>
+          <td class="col-name">TestCase/test_login.py::TestLogin::test_0_login[data2]</td>
+          <td class="col-duration">1.72</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;TestCase.test_login.TestLogin object at 0x000002531B14E880&gt;, data = {&#x27;expect&#x27;: &#x27;========故意做错的断言==========&#x27;, &#x27;password&#x27;: &#x27;magaoge..00&#x27;, &#x27;phoneNum&#x27;: &#x27;16621710375&#x27;}<br/>access_web = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;936b1fb658681536731a912c9cff663e&quot;)&gt;<br/><br/>    @pytest.mark.parametrize(&quot;data&quot;,login_erro_data)<br/>    def test_0_login(self, data,access_web):<br/>        print(data)<br/>        LoginPage(access_web).login(data[&quot;phoneNum&quot;], data[&quot;password&quot;])<br/>        # 断言判断，三种方式，根据实际的场景来使用：<br/>        # 1.find_element<br/>        # 2.显式等待加载页面元素，加载不到判断错误<br/>        # 3.assert<br/>        time.sleep(0.5)<br/>        # assert True<br/>&gt;       LoginPage(access_web).assert_by_txt(access_web,data[&quot;expect&quot;],loc.login_fieldText_Xpath,doc=&quot;首页_登录_登录失败断言&quot;)<br/><br/>TestCase\test_login.py:68: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;PageObject.login_page.LoginPage object at 0x000002531B14EF40&gt;, access_web = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;936b1fb658681536731a912c9cff663e&quot;)&gt;<br/>excepct = &#x27;========故意做错的断言==========&#x27;, locator = (&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;), doc = &#x27;首页_登录_登录失败断言&#x27;<br/><br/>    def assert_by_txt(self,access_web,excepct,locator,doc=&quot;&quot;):<br/>        &quot;&quot;&quot;<br/>        :param excepct:预期的结果值<br/>        :param locater: 希望对比的实际数据的元素定位坐标<br/>        :param doc:<br/>        :return:<br/>        &quot;&quot;&quot;<br/>        MyLog.info(&quot;需要获取文本断言的元素是{}&quot;.format(locator))<br/>        txt = self.get_element_text(locator,doc=doc)<br/>        try:<br/>&gt;           assert excepct == txt<br/><span class="error">E           AssertionError</span><br/><br/>PageObject\base_page.py:270: AssertionError<br/> -----------------------------Captured stdout setup------------------------------ <br/>========方法公用=========
+<br/> ------------------------------Captured stdout call------------------------------ <br/>{&#x27;phoneNum&#x27;: &#x27;16621710375&#x27;, &#x27;password&#x27;: &#x27;magaoge..00&#x27;, &#x27;expect&#x27;: &#x27;========故意做错的断言==========&#x27;}
+等待加载的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+等待加载的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     pyWebAuntoTest:mylog.py:52 等待加载的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 加载时间为:0:00:00.014943
+INFO     pyWebAuntoTest:mylog.py:52 点击的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 输入的元素是:(&#x27;id&#x27;, &#x27;username&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;id&#x27;, &#x27;username&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 输入的元素是:(&#x27;id&#x27;, &#x27;password-o&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;id&#x27;, &#x27;password-o&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 点击的元素是:(&#x27;class name&#x27;, &#x27;loginBtn&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;class name&#x27;, &#x27;loginBtn&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 需要获取文本断言的元素是(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 需要获取文本断言的元素是(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 等待加载的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 加载时间为:0:00:00.014797
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+ERROR    pyWebAuntoTest:mylog.py:56 首页_登录_登录失败断言文本断言失败！
+INFO     pyWebAuntoTest:mylog.py:52 图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220129151747.png
+INFO     pyWebAuntoTest:mylog.py:52 图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220129151747.png<br/></div></td></tr></tbody>
+      <tbody class="rerun results-table-row">
+        <tr>
+          <td class="col-result">Rerun</td>
+          <td class="col-name">TestCase/test_login.py::TestLogin::test_0_login[data2]</td>
+          <td class="col-duration">1.82</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;TestCase.test_login.TestLogin object at 0x000002531B18F6A0&gt;, data = {&#x27;expect&#x27;: &#x27;========故意做错的断言==========&#x27;, &#x27;password&#x27;: &#x27;magaoge..00&#x27;, &#x27;phoneNum&#x27;: &#x27;16621710375&#x27;}<br/>access_web = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;936b1fb658681536731a912c9cff663e&quot;)&gt;<br/><br/>    @pytest.mark.parametrize(&quot;data&quot;,login_erro_data)<br/>    def test_0_login(self, data,access_web):<br/>        print(data)<br/>        LoginPage(access_web).login(data[&quot;phoneNum&quot;], data[&quot;password&quot;])<br/>        # 断言判断，三种方式，根据实际的场景来使用：<br/>        # 1.find_element<br/>        # 2.显式等待加载页面元素，加载不到判断错误<br/>        # 3.assert<br/>        time.sleep(0.5)<br/>        # assert True<br/>&gt;       LoginPage(access_web).assert_by_txt(access_web,data[&quot;expect&quot;],loc.login_fieldText_Xpath,doc=&quot;首页_登录_登录失败断言&quot;)<br/><br/>TestCase\test_login.py:68: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;PageObject.login_page.LoginPage object at 0x000002531B187730&gt;, access_web = &lt;selenium.webdriver.chrome.webdriver.WebDriver (session=&quot;936b1fb658681536731a912c9cff663e&quot;)&gt;<br/>excepct = &#x27;========故意做错的断言==========&#x27;, locator = (&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;), doc = &#x27;首页_登录_登录失败断言&#x27;<br/><br/>    def assert_by_txt(self,access_web,excepct,locator,doc=&quot;&quot;):<br/>        &quot;&quot;&quot;<br/>        :param excepct:预期的结果值<br/>        :param locater: 希望对比的实际数据的元素定位坐标<br/>        :param doc:<br/>        :return:<br/>        &quot;&quot;&quot;<br/>        MyLog.info(&quot;需要获取文本断言的元素是{}&quot;.format(locator))<br/>        txt = self.get_element_text(locator,doc=doc)<br/>        try:<br/>&gt;           assert excepct == txt<br/><span class="error">E           AssertionError</span><br/><br/>PageObject\base_page.py:270: AssertionError<br/> -----------------------------Captured stdout setup------------------------------ <br/>========方法公用=========
+<br/> ------------------------------Captured stdout call------------------------------ <br/>{&#x27;phoneNum&#x27;: &#x27;16621710375&#x27;, &#x27;password&#x27;: &#x27;magaoge..00&#x27;, &#x27;expect&#x27;: &#x27;========故意做错的断言==========&#x27;}
+等待加载的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+等待加载的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     pyWebAuntoTest:mylog.py:52 等待加载的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 加载时间为:0:00:00.014943
+INFO     pyWebAuntoTest:mylog.py:52 点击的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 输入的元素是:(&#x27;id&#x27;, &#x27;username&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;id&#x27;, &#x27;username&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 输入的元素是:(&#x27;id&#x27;, &#x27;password-o&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;id&#x27;, &#x27;password-o&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 点击的元素是:(&#x27;class name&#x27;, &#x27;loginBtn&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;class name&#x27;, &#x27;loginBtn&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 需要获取文本断言的元素是(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 需要获取文本断言的元素是(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 等待加载的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 加载时间为:0:00:00.014797
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+ERROR    pyWebAuntoTest:mylog.py:56 首页_登录_登录失败断言文本断言失败！
+INFO     pyWebAuntoTest:mylog.py:52 图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220129151747.png
+INFO     pyWebAuntoTest:mylog.py:52 图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220129151747.png<br/> -----------------------------Captured stdout setup------------------------------ <br/>========方法公用=========
+<br/> ------------------------------Captured stdout call------------------------------ <br/>{&#x27;phoneNum&#x27;: &#x27;16621710375&#x27;, &#x27;password&#x27;: &#x27;magaoge..00&#x27;, &#x27;expect&#x27;: &#x27;========故意做错的断言==========&#x27;}
+等待加载的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+等待加载的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     pyWebAuntoTest:mylog.py:52 等待加载的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 加载时间为:0:00:00.029150
+INFO     pyWebAuntoTest:mylog.py:52 点击的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 输入的元素是:(&#x27;id&#x27;, &#x27;username&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;id&#x27;, &#x27;username&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 输入的元素是:(&#x27;id&#x27;, &#x27;password-o&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;id&#x27;, &#x27;password-o&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 点击的元素是:(&#x27;class name&#x27;, &#x27;loginBtn&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;class name&#x27;, &#x27;loginBtn&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 需要获取文本断言的元素是(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 需要获取文本断言的元素是(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 等待加载的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 加载时间为:0:00:00.028795
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+ERROR    pyWebAuntoTest:mylog.py:56 首页_登录_登录失败断言文本断言失败！
+INFO     pyWebAuntoTest:mylog.py:52 图片保存路径是==========C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220129151747.png
+INFO     pyWebAuntoTest:mylog.py:52 图片保存成功,存储位置在C:\Users\MAG\PycharmProjects\pyWebAutoTest\TestResult/screen_shot\首页_登录_登录失败断言_20220129151747.png<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">TestCase/test_login.py::test_pytest</td>
+          <td class="col-duration">0.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>这个的标记是smoke
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">TestCase/test_login.py::TestLogin::test_0_login[data0]</td>
+          <td class="col-duration">8.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>========类公用=========
+========方法公用=========
+<br/> ------------------------------Captured stdout call------------------------------ <br/>{&#x27;phoneNum&#x27;: &#x27;16621710374&#x27;, &#x27;password&#x27;: &#x27;magaoge..&#x27;, &#x27;expect&#x27;: &#x27;登录失败,请确认账号和密码正确&#x27;}
+等待加载的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+等待加载的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     pyWebAuntoTest:mylog.py:52 等待加载的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 加载时间为:0:00:00.014257
+INFO     pyWebAuntoTest:mylog.py:52 点击的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 输入的元素是:(&#x27;id&#x27;, &#x27;username&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;id&#x27;, &#x27;username&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 输入的元素是:(&#x27;id&#x27;, &#x27;password-o&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;id&#x27;, &#x27;password-o&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 点击的元素是:(&#x27;class name&#x27;, &#x27;loginBtn&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;class name&#x27;, &#x27;loginBtn&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 需要获取文本断言的元素是(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 需要获取文本断言的元素是(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 等待加载的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 加载时间为:0:00:00.021250
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">TestCase/test_login.py::TestLogin::test_0_login[data1]</td>
+          <td class="col-duration">2.41</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>========方法公用=========
+<br/> ------------------------------Captured stdout call------------------------------ <br/>{&#x27;phoneNum&#x27;: &#x27;16621710375&#x27;, &#x27;password&#x27;: &#x27;magaoge..00&#x27;, &#x27;expect&#x27;: &#x27;登录失败,请确认账号和密码正确&#x27;}
+等待加载的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+等待加载的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     pyWebAuntoTest:mylog.py:52 等待加载的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 加载时间为:0:00:00.018993
+INFO     pyWebAuntoTest:mylog.py:52 点击的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 输入的元素是:(&#x27;id&#x27;, &#x27;username&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;id&#x27;, &#x27;username&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 输入的元素是:(&#x27;id&#x27;, &#x27;password-o&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;id&#x27;, &#x27;password-o&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 点击的元素是:(&#x27;class name&#x27;, &#x27;loginBtn&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;class name&#x27;, &#x27;loginBtn&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 需要获取文本断言的元素是(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 需要获取文本断言的元素是(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 等待加载的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 加载时间为:0:00:00.017104
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;xpath&#x27;, &quot;//em[text()=&#x27;登录失败,请确认账号和密码正确&#x27;]&quot;)<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">TestCase/test_login.py::TestLogin::test_1_login_success[data0]</td>
+          <td class="col-duration">6.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>========方法公用=========
+<br/> ------------------------------Captured stdout call------------------------------ <br/>等待加载的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+等待加载的元素是:(&#x27;xpath&#x27;, &quot;//a[text() = &#x27;个人中心&#x27;]&quot;)
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     pyWebAuntoTest:mylog.py:52 等待加载的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 加载时间为:0:00:00.019233
+INFO     pyWebAuntoTest:mylog.py:52 点击的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;class name&#x27;, &#x27;header-btn1&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 输入的元素是:(&#x27;id&#x27;, &#x27;username&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;id&#x27;, &#x27;username&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 输入的元素是:(&#x27;id&#x27;, &#x27;password-o&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;id&#x27;, &#x27;password-o&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 点击的元素是:(&#x27;class name&#x27;, &#x27;loginBtn&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;class name&#x27;, &#x27;loginBtn&#x27;)
+INFO     pyWebAuntoTest:mylog.py:52 需要获取文本断言的元素是(&#x27;xpath&#x27;, &quot;//a[text() = &#x27;个人中心&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 需要获取文本断言的元素是(&#x27;xpath&#x27;, &quot;//a[text() = &#x27;个人中心&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 等待加载的元素是:(&#x27;xpath&#x27;, &quot;//a[text() = &#x27;个人中心&#x27;]&quot;)
+INFO     pyWebAuntoTest:mylog.py:52 加载时间为:0:00:00.028179
+INFO     pyWebAuntoTest:mylog.py:52 查找的元素是:(&#x27;xpath&#x27;, &quot;//a[text() = &#x27;个人中心&#x27;]&quot;)<br/></div></td></tr></tbody></table></body></html>

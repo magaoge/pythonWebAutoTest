@@ -1,0 +1,146 @@
+{
+  "uid" : "51c90055f0af2892",
+  "name" : "test_0_login[data2]",
+  "fullName" : "TestCase.test_login.TestLogin#test_0_login",
+  "historyId" : "f677e2d8e1f0aa382e7348ae3cacbe73",
+  "time" : {
+    "start" : 1643438243338,
+    "stop" : 1643438245224,
+    "duration" : 1886
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError",
+  "statusTrace" : "self = <TestCase.test_login.TestLogin object at 0x00000200FFE949A0>, data = {'expect': '========故意做错的断言==========', 'password': 'magaoge..00', 'phoneNum': '16621710375'}\naccess_web = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"a6575d3c1bf0134f3a8ca972ea6fcb29\")>\n\n    @pytest.mark.parametrize(\"data\",login_erro_data)\n    def test_0_login(self, data,access_web):\n        print(data)\n        LoginPage(access_web).login(data[\"phoneNum\"], data[\"password\"])\n        # 断言判断，三种方式，根据实际的场景来使用：\n        # 1.find_element\n        # 2.显式等待加载页面元素，加载不到判断错误\n        # 3.assert\n        time.sleep(0.5)\n        # assert True\n>       LoginPage(access_web).assert_by_txt(access_web,data[\"expect\"],loc.login_fieldText_Xpath,doc=\"首页_登录_登录失败断言\")\n\nTestCase\\test_login.py:68: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <PageObject.login_page.LoginPage object at 0x00000200FFE94A00>, access_web = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"a6575d3c1bf0134f3a8ca972ea6fcb29\")>\nexcepct = '========故意做错的断言==========', locator = ('xpath', \"//em[text()='登录失败,请确认账号和密码正确']\"), doc = '首页_登录_登录失败断言'\n\n    def assert_by_txt(self,access_web,excepct,locator,doc=\"\"):\n        \"\"\"\n        :param excepct:预期的结果值\n        :param locater: 希望对比的实际数据的元素定位坐标\n        :param doc:\n        :return:\n        \"\"\"\n        MyLog.info(\"需要获取文本断言的元素是{}\".format(locator))\n        txt = self.get_element_text(locator,doc=doc)\n        try:\n>           assert excepct == txt\nE           AssertionError\n\nPageObject\\base_page.py:270: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "access_web",
+    "time" : {
+      "start" : 1643438231051,
+      "stop" : 1643438237987,
+      "duration" : 6936
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "refresh",
+    "time" : {
+      "start" : 1643438243336,
+      "stop" : 1643438243336,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError",
+    "statusTrace" : "self = <TestCase.test_login.TestLogin object at 0x00000200FFE949A0>, data = {'expect': '========故意做错的断言==========', 'password': 'magaoge..00', 'phoneNum': '16621710375'}\naccess_web = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"a6575d3c1bf0134f3a8ca972ea6fcb29\")>\n\n    @pytest.mark.parametrize(\"data\",login_erro_data)\n    def test_0_login(self, data,access_web):\n        print(data)\n        LoginPage(access_web).login(data[\"phoneNum\"], data[\"password\"])\n        # 断言判断，三种方式，根据实际的场景来使用：\n        # 1.find_element\n        # 2.显式等待加载页面元素，加载不到判断错误\n        # 3.assert\n        time.sleep(0.5)\n        # assert True\n>       LoginPage(access_web).assert_by_txt(access_web,data[\"expect\"],loc.login_fieldText_Xpath,doc=\"首页_登录_登录失败断言\")\n\nTestCase\\test_login.py:68: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <PageObject.login_page.LoginPage object at 0x00000200FFE94A00>, access_web = <selenium.webdriver.chrome.webdriver.WebDriver (session=\"a6575d3c1bf0134f3a8ca972ea6fcb29\")>\nexcepct = '========故意做错的断言==========', locator = ('xpath', \"//em[text()='登录失败,请确认账号和密码正确']\"), doc = '首页_登录_登录失败断言'\n\n    def assert_by_txt(self,access_web,excepct,locator,doc=\"\"):\n        \"\"\"\n        :param excepct:预期的结果值\n        :param locater: 希望对比的实际数据的元素定位坐标\n        :param doc:\n        :return:\n        \"\"\"\n        MyLog.info(\"需要获取文本断言的元素是{}\".format(locator))\n        txt = self.get_element_text(locator,doc=doc)\n        try:\n>           assert excepct == txt\nE           AssertionError\n\nPageObject\\base_page.py:270: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "c25aab159f962c7b",
+      "name" : "log",
+      "source" : "c25aab159f962c7b.txt",
+      "type" : "text/plain",
+      "size" : 2035
+    }, {
+      "uid" : "eaf5fa75dbd3a30d",
+      "name" : "stdout",
+      "source" : "eaf5fa75dbd3a30d.txt",
+      "type" : "text/plain",
+      "size" : 290
+    } ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : true,
+    "attachmentsCount" : 2,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ {
+    "name" : "access_web::0",
+    "time" : {
+      "start" : 1643438265361,
+      "stop" : 1643438267740,
+      "duration" : 2379
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  }, {
+    "name" : "refresh::0",
+    "time" : {
+      "start" : 1643438245389,
+      "stop" : 1643438246228,
+      "duration" : 839
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "shouldDisplayMessage" : false,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('refresh')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCase"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "LNGSHAL-378"
+  }, {
+    "name" : "thread",
+    "value" : "26540-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCase.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "data",
+    "value" : "{'phoneNum': '16621710375', 'password': 'magaoge..00', 'expect': '========故意做错的断言=========='}"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.usefixtures('refresh')" ]
+  },
+  "source" : "51c90055f0af2892.json",
+  "parameterValues" : [ "{'phoneNum': '16621710375', 'password': 'magaoge..00', 'expect': '========故意做错的断言=========='}" ]
+}
